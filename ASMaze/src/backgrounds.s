@@ -204,66 +204,66 @@ palettes:
 
 sprites:
 ;      y   tile attr  x		; static front
-.byte $00, $00, $00, $00  ;left side of face
-.byte $00, $01, $00, $08  ;right side of face
-.byte $08, $10, $00, $00  ;left side of body
-.byte $08, $11, $00, $08  ;right side of face
+.byte $70, $01, $00, $78  ;right side of face
+.byte $70, $00, $00, $70  ;left side of face
+.byte $78, $10, $00, $70  ;left side of body
+.byte $78, $11, $00, $78  ;right side of face
 ; attr $03 = %0000 0011
 
-.byte $00, $02, $00, $10
-.byte $00, $03, $00, $18   ; moving front (left hand)
-.byte $08, $12, $00, $10
-.byte $08, $13, $00, $18
+.byte $70, $02, $00, $80
+.byte $70, $03, $00, $88   ; moving front (left hand)
+.byte $78, $12, $00, $80
+.byte $78, $13, $00, $88
 
-.byte $00, $04, $00, $20
-.byte $00, $05, $00, $28   ; moving front (right hand)
-.byte $08, $14, $00, $20
-.byte $08, $15, $00, $28
+.byte $70, $04, $00, $90
+.byte $70, $05, $00, $98   ; moving front (right hand)
+.byte $78, $14, $00, $90
+.byte $78, $15, $00, $98
 
-.byte $10, $06, $00, $00   ; back static
-.byte $10, $07, $00, $08   
-.byte $18, $16, $00, $00
-.byte $18, $17, $00, $08
+.byte $80, $06, $00, $70   ; back static
+.byte $80, $07, $00, $78   
+.byte $88, $16, $00, $70
+.byte $88, $17, $00, $78
 
-.byte $10, $08, $00, $10   ; moving back (left hand)
-.byte $10, $09, $00, $18   
-.byte $18, $18, $00, $10
-.byte $18, $19, $00, $18
+.byte $80, $08, $00, $80   ; moving back (left hand)
+.byte $80, $09, $00, $88   
+.byte $88, $18, $00, $80
+.byte $88, $19, $00, $88
 
-.byte $10, $0a, $00, $20   ; moving back (right hand)
-.byte $10, $0b, $00, $28   
-.byte $18, $1a, $00, $20
-.byte $18, $1b, $00, $28
+.byte $80, $0a, $00, $90   ; moving back (right hand)
+.byte $80, $0b, $00, $98   
+.byte $88, $1a, $00, $90
+.byte $88, $1b, $00, $98
 
-.byte $20, $0c, $00, $00   ; right static
-.byte $20, $0d, $00, $08   
-.byte $28, $1c, $00, $00
-.byte $28, $1d, $00, $08
+.byte $90, $0c, $00, $70   ; right static
+.byte $90, $0d, $00, $78   
+.byte $98, $1c, $00, $70
+.byte $98, $1d, $00, $78
 
-.byte $20, $0e, $00, $10   ; moving right (left hand)
-.byte $20, $0f, $00, $18   
-.byte $28, $1e, $00, $10
-.byte $28, $1f, $00, $18
+.byte $90, $0e, $00, $80   ; moving right (left hand)
+.byte $90, $0f, $00, $88   
+.byte $98, $1e, $00, $80
+.byte $98, $1f, $00, $88
 
-.byte $20, $20, $00, $20   ; moving right (right hand)
-.byte $20, $21, $00, $28   
-.byte $28, $30, $00, $20
-.byte $28, $31, $00, $28
+.byte $90, $20, $00, $90   ; moving right (right hand)
+.byte $90, $21, $00, $98   
+.byte $98, $30, $00, $90
+.byte $98, $31, $00, $98
 
-.byte $30, $22, $00, $00   ; left static
-.byte $30, $23, $00, $08   
-.byte $38, $32, $00, $00
-.byte $38, $33, $00, $08
+.byte $a0, $22, $00, $70   ; left static
+.byte $a0, $23, $00, $78   
+.byte $a8, $32, $00, $70
+.byte $a8, $33, $00, $78
 
-.byte $30, $24, $00, $10   ; moving left (left hand)
-.byte $30, $25, $00, $18   
-.byte $38, $34, $00, $10
-.byte $38, $35, $00, $18
+.byte $a0, $24, $00, $80   ; moving left (left hand)
+.byte $a0, $25, $00, $88   
+.byte $a8, $34, $00, $80
+.byte $a8, $35, $00, $88
 
-.byte $30, $26, $00, $20   ; moving left (right hand)
-.byte $30, $27, $00, $28   
-.byte $38, $36, $00, $20
-.byte $38, $37, $00, $28
+.byte $a0, $26, $00, $90   ; moving left (right hand)
+.byte $a0, $27, $00, $98   
+.byte $a8, $36, $00, $90
+.byte $a8, $37, $00, $98
 
 .segment "CHR"
 .incbin "graphics.chr"
